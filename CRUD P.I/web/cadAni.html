@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cadastro de produtos</title>
+        <meta charset="ISO-8859-1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <link rel="stylesheet" href="imagens/">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <script src="js/jquery-3.7.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+    </head>
+    <body>
+
+        <main class="container-md justify-content-center" id="cadMain">
+            <form method="post" action="armazenar_animais.jsp">
+                <div class="mb-3 mt-5">
+                    <label for="reg">Registro:*</label>
+                    <input id="reg" type="number" name="Registro" class="form-control" min="1" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="nom">Nome do animal:*</label>
+                    <input id="nom" type="text" name="Nome" size="35" maxlength="35" class="form-control" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="esp">Espécie:*</label>
+                    <input id="esp" type="text" size="35" maxlength="35" name="Especie" class="form-control" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="rac">Raça:*</label>
+                    <input id="rac" type="text" size="40" maxlength="40" name="Raca" class="form-control" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="ida">Idade (em anos):</label>
+                    <input id="ida" type="number" name="Idade" class="form-control" min="1">
+                </div>
+
+                <div class="mb-3">
+                    <label for="pes">Peso (em Kg):*</label>
+                    <input id="pes" type="number" step="0.01" name="Peso" class="form-control" min="0.1" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="dat">Data de registro:*</label>
+                    <input id="dat" type="date" name="Data" class="form-control" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="stt">Status:*</label>
+                    <input id="stt" type="text" size="50" maxlength="50" name="Status" class="form-control" required>
+                </div>
+
+                <div class="mb-5">
+                    <button type="submit" class="btn btn-dark">Salvar</button>
+                </div>
+            </form>
+
+        </main>
+    </body>
+</html>

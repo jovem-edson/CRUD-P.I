@@ -1,0 +1,22 @@
+
+table {
+    display: block;
+    background-color: background;
+    padding: 10px;
+}
+
+* {
+    margin: 0 auto;
+}
+
+th {
+    background-color: #212529;
+    text-align: center;
+    color: white;
+    padding: 5px 10px;
+}
+
+td {
+    border: solid #212529;
+    text-align: center;
+}
